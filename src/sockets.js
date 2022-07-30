@@ -23,7 +23,11 @@ module.exports = async(io) => {
                 line: [
                     {x: data.line[0].x, y: data.line[0].y},
                     {x: data.line[1].x, y: data.line[1].y}
-                ]
+                ],
+                dataline: {
+                    color: data.dataline.color,
+                    thickness: data.dataline.thickness
+                }
             });
  
             // save model to database
