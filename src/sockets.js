@@ -4,7 +4,7 @@ module.exports = async(io) => {
     var line_history;
        
     io.on('connection', async(socket) => {
-        console.log('new user connected');
+        //console.log('new user connected');
         // Extracción de datos de la base de datos
         try{
             line_history = await lines.find();
